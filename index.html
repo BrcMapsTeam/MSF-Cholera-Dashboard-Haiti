@@ -15,6 +15,7 @@
         <script src="js/dc.leaflet.js"></script>
         <script src="data/data.js"></script>
         <script src="data/carrefour.js"></script>
+        <script src="data/pop.js"></script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-46399763-1']);
@@ -42,19 +43,19 @@
                 </div>                   
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <p>Map | Current filter: <span id="mapfilter"></span></p>
-                    <div class="msf-chl-viz" id="msf-chl-map"></div>                            
-                </div>               
-            </div>
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row">                    
-                        <div class="col-md-312">
+                <div class="col-md-8">
+                    <div class = "row">
+                        <div class="col-md-12">
+                            <p>Map | Current filter: <span id="mapfilter"></span></p>
+                            <div class="msf-chl-viz" id="msf-chl-map"></div>
+                        </div>                            
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <div id="msf-chl-time" class="msf-chl-viz">
                                 <p>Week | Current filter: <span class="filter"></span></p>
                             </div>                                
-                        </div>                               
+                        </div>
                     </div>
                     <div class="row">                    
                         <div class="col-md-12">
@@ -63,13 +64,38 @@
                             </div>                                
                         </div>                               
                     </div>
+                    <!-- <div class="row">                    
+                        <div class="col-md-12">
+                            <div id="msf-chl-ind" class="msf-chl-viz">
+                                <p>Incidence | Current filter: <span class="filter"></span></p>
+                            </div>                                
+                        </div>                               
+                    </div>  -->                                                             
                 </div>
-                <div class="col-md-3">
-                    <div id="msf-chl-sex" class="msf-chl-viz">
-                        <p>Sex | Current filter: <span class="filter"></span></p>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="msf-chl-sex" class="msf-chl-viz">
+                                <p>Sex | Current filter: <span class="filter"></span></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>                           
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="msf-chl-deh" class="msf-chl-viz margintop20">
+                                <p>Dehydration | Current filter: <span class="filter"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="msf-chl-dur" class="msf-chl-viz margintop20">
+                                <p>Duration | Current filter: <span class="filter"></span></p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>                              
+            </div>                          
         </div>
         <script src="js/site.js"></script> 
     </body>

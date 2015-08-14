@@ -622,9 +622,7 @@ dc.leafletChoroplethChart = function (parent, chartGroup) {
             options = options(feature);
         }
         options = JSON.parse(JSON.stringify(options));
-        console.log(_dataMap);
         var v = _dataMap[_chart.featureKeyAccessor()(feature)];
-        console.log(v);
         if (v && v.d) {
             if (_chart.hasFilter()) {
                 if (isSelectedGeo(v.d)) {
